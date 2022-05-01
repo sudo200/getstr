@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cc -pedantic -Wall -Wno-missing-braces -Wno-unused-variable -std=c99 -Os *.h *.c
+rm *.gch
