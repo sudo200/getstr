@@ -1,4 +1,11 @@
 #!/bin/sh
 
-cc -pedantic -Wall -Wno-missing-braces -Wno-unused-variable -std=c99 -Os *.h *.c
-rm *.gch
+if [ -d out ];
+then
+  false;
+else
+  mkdir out/;
+fi
+
+cc -g -I'include' -o out/getstr -pedantic -Wall -std=c99 src/*.c test/*.c
+

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+valgrind ./out/getstr 2>&1 | less
+
